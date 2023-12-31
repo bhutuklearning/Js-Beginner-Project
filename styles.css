@@ -386,7 +386,7 @@ body{
 
     .class1{
         width: 100vw;
-        height: 84vh;
+        height: 78vh;
     }
 
     .class2, .hero, .class5-child, .container-rps-child, .stopwatch{
@@ -424,6 +424,29 @@ body{
         border-radius: 10px;
     }
     /* Color Change Project  */
+
+    .class5-child{
+        display: flex;
+        justify-content: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        border-radius: 10px;
+        border: 2px solid #fff;
+    }
+    .class5-child-experiment{
+        width: 24vw;
+        height: 24vh;
+      
+        color: #fff;
+        padding: 1.5vh 1.5vw;
+        border-radius: 10px;
+        text-align: center;
+        border: 3px solid #fff;
+     
+        background: linear-gradient(to right, #FFFDE4, #005AA7);
+       
+    }
+
     #colorChange-form{
         display: flex;
         justify-content: space-evenly;
@@ -450,14 +473,14 @@ body{
         color: #fff;
     }
     .class5-child-experiment h1{
-        font-size: 2.6vw;
+        font-size: 3.2vw;
     }
     
     .class5-child-experiment p{
         font-size: 1.2vw;
     }
     .down-footer{
-        height: 4.4vh;
+        height: 4.2vh;
     }
     .confetti-1, .confetti-2{
         font-size: 1.5vw;
