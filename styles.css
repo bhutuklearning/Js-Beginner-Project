@@ -406,7 +406,7 @@ body{
     .rps-main-heading{
         width: 65vw;
         height: 20vh;
-        font-size: 3.2vw;
+        font-size: 2.8vw;
     }
     .rps-main-heading #display-rps{
         font-size: 5vw;
@@ -434,8 +434,8 @@ body{
         border: 2px solid #fff;
     }
     .class5-child-experiment{
-        width: 24vw;
-        height: 24vh;
+        width: 28vw;
+        height: 20vh;
         color: #fff;
         padding: 1.5vh 1.5vw;
         border-radius: 10px;
@@ -448,10 +448,10 @@ body{
 
     #colorChange-form{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: column;
-        width: 24vw;
-        height: 24vh;
+        width: 28vw;
+        height: 20vh;
     }
     #input-color{
         width: 16.2vw;
