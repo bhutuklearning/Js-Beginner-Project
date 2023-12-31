@@ -384,6 +384,11 @@ body{
 
 @media screen and (max-device-width: 600px){
 
+    .class1{
+        width: 100vw;
+        height: 84vh;
+    }
+
     .class2, .hero, .class5-child, .container-rps-child, .stopwatch{
         width: 65vw;
         height: 55vw;
