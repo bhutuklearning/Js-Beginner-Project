@@ -434,10 +434,10 @@ body{
         border: 2px solid #fff;
     }
     .class5-child-experiment{
-        width: 28vw;
-        height: 20vh;
+        width: 32vw;
+        height: 18vh;
         color: #fff;
-        padding: 1.5vh 1.5vw;
+        padding: 1.2vh 0.8vw;
         border-radius: 10px;
         text-align: center;
         border: 3px solid #fff;
@@ -448,37 +448,41 @@ body{
 
     #colorChange-form{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        width: 28vw;
-        height: 20vh;
+        width: 32vw;
+        height: 18vh;
     }
     #input-color{
         width: 16.2vw;
-        padding: 0.3vh 0.5vw;
+        padding: 0.3vh 1.2vw;
         /* height: 0.8vh; */
         border: none;
         border: 1px solid #212121;
         border-radius: 10px;
         background-color: #f7f7f7;
         /* margin-left: 30px;*/
-        margin: 2.5vh 0;
+        margin: 1.5vh 0;
+        text-align: center;
     }
     #button-color{
+        width: 16.2vw;
         border: none;
-        border: 2.5px solid #fff;
-        border-radius: 12px;
-        padding: 0.8vh 1.2vw;
+        border: 1.4px solid #fff;
+        border-radius: 8px;
+        /* padding: 0.4vh 0.8vw; */
         font-size: 1vw;
         background: linear-gradient(to right, #FFFDE4, #005AA7);
         color: #fff;
+        margin-bottom: 1.6vh;
     }
     .class5-child-experiment h1{
         font-size: 3.2vw;
     }
     
     .class5-child-experiment p{
-        font-size: 1.2vw;
+        font-size: 1.5vw;
     }
     .down-footer{
         height: 4.2vh;
