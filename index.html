@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Div1 -->
+    <div class="class1 ">
+        <div class="class2 hidden hero">
+            <!-- <div class="hero"> -->
+                <div class="hero-heading" style="filter: drop-shadow(10px 8px 2px #005AA7); color: #fff;">The Counter App</div>
+                <div class="hero-main">
+                    <button id="sub"> - </button>
+                    <h2 id="display">0</h2>
+                    <button id="add">+</button>
+                </div>
+                <div class="hero-reset">
+                    <button id="reset" style="background: linear-gradient(to right, #FFFDE4, #005AA7); color: #fff;">Reset</button>
+                </div>
+            <!-- </div> -->
+        </div> 
+    </div>
+
+    <!-- DIV2 -->
+    <div class="class1 ">
+        <div class="class2 hidden">
+            <!-- <div class="class5 div"> -->
+                <div class="class5-child">
+                    <div class="class5-child-experiment">
+                     <form id="colorChange-form">
+                        <h1> Color Change</h1>
+                        <p id="color-change-paragraph">You can enter color name, hex code or rgb value.</p>
+                        <input style="margin-top: 1.5vw;" id="input-color" type="text" placeholder="input"/>
+        
+                        <button id="button-color"><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+                     </form>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div> 
+    </div>
+
+
+    <div class="class1 " >
+        <div class="class2 container-rps-child hidden">
+            <div class="rps-main-heading">
+                <h2 style="filter: drop-shadow(20px 6px 4px #4444dd);">Rock, Paper and Scissors</h2>
+                <br/>
+                <h1 id="display-rps"></h1>
+            </div>
+            <div class="rps-main-work">
+                <button id="one-rock">✊</button>
+                <button id="two-paper">✋ </button>
+                <button id="three-paper">✌️</button>
+            </div>
+            <div class="rps-main-score">
+                <h1 id="rps-score-display"> Score: 00 </h1>
+                <button id="reset-rps">Reset</button>
+            </div>
+        </div>  
+    </div>
+
+    <div class="class1 ">
+        <div class="class2 stopwatch hidden">
+            <div id="stopwatch-heading">The Stopwatch ⏱️</div>
+            <div id="timer">00:00:00</div>
+            <div id="buttons-stopwatch">
+                <button id="stp-start">Start</button>
+                <button id="stp-stop">Stop</button>
+                <button id="stp-reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="time-footer">
+        <div id="time">00:00:00 AM</div>
+    </div>
+
+    <div class="down-footer">
+        <button  class="confetti-1">🎉 Confetti 🎉</button>
+        🙏Thank you for your time.🙏
+        <button class="confetti-2">🎉 Confetti 🎉</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="counter.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script>
+        document.querySelector(".confetti-1").addEventListener("click", ()=>{
+            // confetti();
+            var duration = 8 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            var particleCount = 70 * (timeLeft / duration);
+            // since particles fall down, start a bit higher than random
+            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+            }, 250);
+                    });
+
+        document.querySelector(".confetti-2").addEventListener("click", ()=>{
+            // confetti();
+            var duration = 8 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            var particleCount = 70 * (timeLeft / duration);
+            // since particles fall down, start a bit higher than random
+            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+            }, 250);
+                    });
+    </script>
+</body>
+</html>
