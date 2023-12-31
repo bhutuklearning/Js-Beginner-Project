@@ -426,8 +426,12 @@ body{
     }
 
     /*Digital Time Display*/
+    .time-footer{
+        width: 14vw;
+        height: 6.8vh;
+    }
     #time{
-        margin-left: 0.6vw;
+        padding-left: 0.7vw;
     }
 }
 
