@@ -384,6 +384,40 @@ body{
 
 @media screen and (max-device-width: 600px){
 
+    .class2, .hero, .class5-child, .container-rps-child, .stopwatch{
+        width: 65vw;
+        height: 55vw;
+    }
+
+    .hero-main{
+        width: 65vw;
+        height: 35vh;
+    }
+    .hero-heading, .hero-reset{
+        width: 65vw;
+        height: 10vh;
+    }
+
+    .rps-main-heading{
+        width: 65vw;
+        height: 20vh;
+    }
+
+    .rps-main-work{
+        width: 65vw;
+        height: 25vh;
+    }
+
+    .rps-main-score{
+        width: 65vw;
+        height: 10vh;
+    }
+    .rps-main-work button{
+        font-size: 4.2vw;
+        padding: 0.8vw;
+        border: none;
+        border-radius: 10px;
+    }
     /* Color Change Project  */
     #colorChange-form{
         display: flex;
