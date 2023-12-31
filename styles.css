@@ -436,7 +436,6 @@ body{
     .class5-child-experiment{
         width: 24vw;
         height: 24vh;
-      
         color: #fff;
         padding: 1.5vh 1.5vw;
         border-radius: 10px;
@@ -451,6 +450,8 @@ body{
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        width: 24vw;
+        height: 24vh;
     }
     #input-color{
         width: 16.2vw;
