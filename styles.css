@@ -401,20 +401,20 @@ body{
     .rps-main-heading{
         width: 65vw;
         height: 20vh;
+        font-size: 3.2vw;
     }
-
-    .rps-main-work{
-        width: 65vw;
-        height: 25vh;
+    .rps-main-heading #display-rps{
+        font-size: 5vw;
     }
+    
 
     .rps-main-score{
         width: 65vw;
         height: 10vh;
     }
     .rps-main-work button{
-        font-size: 4.2vw;
-        padding: 0.8vw;
+        font-size: 6.5vw;
+        padding: 1vw;
         border: none;
         border-radius: 10px;
     }
